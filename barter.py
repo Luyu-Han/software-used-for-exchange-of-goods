@@ -199,20 +199,6 @@ class Barter:
         if len(query) == 0:
             print('没有查询到相关信息，无数据显示')
         print(query)
-        '''
-        format_title = '{:^6}\t{:^12}\t{:8}\t{:^10}\t{:^8}'  # 其中的具体数值是计算得到的
-        print(format_title.format('物品名称', '交换人', '交换人联系方式', '与换人', '与换人联系方式', '备注'))
-        # 定义内容显示格式
-        format_data = '{:^6}\t{:^12}\t{:8}\t{:^10}\t{:^8}'
-        for item in query:
-            print(format_data.format(item.get('物品名称'),
-                                     item.get('交换人'),
-                                     item.get('交换人联系方式'),
-                                     item.get('与换人'),
-                                     item.get('与换人联系方式'),
-                                     item.get('备注')
-                                     ))
-        '''
 
     def save(self, lst):
         stu_txt = open(filename, 'a', encoding='utf-8')  # 以追加的模式打开
